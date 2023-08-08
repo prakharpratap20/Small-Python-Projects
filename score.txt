@@ -1,0 +1,3 @@
+Paper:5
+Scissors:3
+Rock:1

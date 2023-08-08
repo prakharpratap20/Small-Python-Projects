@@ -2,7 +2,7 @@ import random
 
 def display_scores(scores):
     print("Scoreboard: ")
-    for player, score in score.items():
+    for player, score in scores.items():
         print(f"{player} : {score} wins")
     print()
 
