@@ -2,8 +2,8 @@ import random
 import math 
 
 # Taking input 
-lower = int(input("Enter Lower bound :- "))
-upper = int(input("Enter Upper bound :- "))
+lower = int(input("Enter Lower bound :- "));
+upper = int(input("Enter Upper bound :- "));
 
 # generating random number between the lower and upper
 x = random.randint(lower, upper)
