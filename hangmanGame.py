@@ -6,12 +6,15 @@ fruits = [
     'peach', 'lychee', 'muskmelon'
 ]
 
+
 def choose_word():
     return random.choice(fruits)
+
 
 def display_word(word, guessed_letters):
     displayed_word = [c if c in guessed_letters else '_' for c in word]
     return ' '.join(displayed_word)
+
 
 def main():
     word = choose_word()
@@ -50,9 +53,10 @@ def main():
 
         if chances == 0 and ''.join(c for c in displayed_word if c != ' ') != word:
             print(f"You lost! The word was: {word}")
-    
+
     except KeyboardInterrupt:
         print("\nBye! Try Again.")
+
 
 if __name__ == "__main__":
     main()

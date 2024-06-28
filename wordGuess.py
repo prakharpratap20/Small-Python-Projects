@@ -11,7 +11,8 @@ words = ['rainbow', 'computer', 'science', 'programming',
          'python', 'mathematics', 'player', 'condition',
          'reverse', 'water', 'board', 'geeks']
 
-word = random.choice(words)  # this function will choose one random word form this list of words
+# this function will choose one random word form this list of words
+word = random.choice(words)
 
 print("Guess the characters")
 
@@ -21,7 +22,7 @@ turns = 12  # any number of turns can be used here
 
 while turns > 0:
     failed = 0  # count the number of times a user fails
-    for char in word:  # all characters from the input word taking one at a time
+    for char in word:  # all characters from the input word
         if char in guesses:
             print(char, end=" ")
         else:
@@ -41,7 +42,8 @@ while turns > 0:
     # check input with the character in the word
     if guess not in word:
         turns -= 1
-        print("Wrong")  # if the character doesn't match the word then "Wrong" will be given as output
+        # if the character doesn't match the word then "Wrong" will be given
+        print("Wrong")
         print(f"You have {turns} more guesses")
 
         if turns == 0:
